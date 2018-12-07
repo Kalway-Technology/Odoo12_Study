@@ -8,7 +8,7 @@ class Study_Iterm(models.Model):
     name = fields.Char(u'名称', size=64, translate=True)
     person_id = fields.Many2one('res.partner', u'负责人')
     description = fields.Text(u'描述')
-    lession_id = fields.One2many('study.class',‘Iterm_id’,u'课程')
+    lession_id = fields.One2many('study.class','Iterm_id',u'课程')
     
     
 class Study_Class(models.Model):
